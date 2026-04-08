@@ -839,6 +839,42 @@ footer p {
     display: none;
 }
 
+/* Interests / Hobbies */
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.interest-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.interest-card:hover {
+    transform: translateY(-4px);
+}
+
+.interest-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.interest-card h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.interest-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
 .project-preview-img {
     width: 100%;
     height: 180px;
@@ -858,7 +894,179 @@ footer p {
     display: none;
 }
 
+/* ── Interactive Terminal ──────────────────────────────── */
+
+.terminal-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 6rem 1rem 2rem;
+    min-height: calc(100vh - 160px);
+}
+
+.terminal-container {
+    width: 100%;
+    max-width: 860px;
+    background: #0a0a14;
+    border: 1px solid rgba(167, 139, 250, 0.2);
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    cursor: text;
+}
+
+.terminal-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: #141420;
+    border-bottom: 1px solid rgba(167, 139, 250, 0.1);
+}
+
+.terminal-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot-red { background: #ff5f57; }
+.dot-yellow { background: #febc2e; }
+.dot-green { background: #28c840; }
+
+.terminal-title {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    font-size: 0.75rem;
+    color: #888;
+}
+
+.terminal-body {
+    padding: 1rem 1.25rem;
+    overflow-y: auto;
+    max-height: 55vh;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(167, 139, 250, 0.3) transparent;
+}
+
+.terminal-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+    background: rgba(167, 139, 250, 0.3);
+    border-radius: 3px;
+}
+
+.terminal-input-row {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.25rem 1rem;
+    border-top: 1px solid rgba(167, 139, 250, 0.05);
+}
+
+.terminal-prompt {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: #5eead4;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.terminal-input {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: #e2e8f0;
+    background: transparent;
+    border: none;
+    outline: none;
+    flex: 1;
+    caret-color: #5eead4;
+}
+
+.terminal-input::placeholder {
+    color: #444;
+}
+
+/* Terminal output lines */
+
+.terminal-line {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: #c8d0dc;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.terminal-line a {
+    color: #a78bfa;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.terminal-line a:hover {
+    color: #5eead4;
+}
+
+.terminal-input-echo .terminal-cmd {
+    color: #e2e8f0;
+}
+
+.terminal-welcome {
+    color: #888;
+}
+
+.ascii-art {
+    color: #a78bfa;
+    font-size: 0.6rem;
+    line-height: 1.2;
+    overflow-x: auto;
+}
+
+/* ── Konami Mode ──────────────────────────── */
+
+.terminal-container.konami-mode {
+    border-color: #00ff41;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+    position: relative;
+}
+
+.terminal-container.konami-mode::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(18, 16, 16, 0) 50%,
+        rgba(0, 0, 0, 0.1) 50%
+    ), linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 0.03),
+        rgba(0, 255, 0, 0.01),
+        rgba(0, 0, 255, 0.03)
+    );
+    background-size: 100% 3px, 3px 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.konami-mode .terminal-prompt { color: #00ff41; }
+.konami-mode .terminal-line { color: #00ff41; text-shadow: 0 0 5px rgba(0, 255, 65, 0.5); }
+.konami-mode .ascii-art { color: #00ff41; }
+.konami-mode .terminal-line a { color: #00ff41; text-decoration: underline; }
+.konami-mode .terminal-input { color: #00ff41; caret-color: #00ff41; }
+
 /* RESPONSIVENESS */
+
 
 @media (max-width: 768px) {
     section {
