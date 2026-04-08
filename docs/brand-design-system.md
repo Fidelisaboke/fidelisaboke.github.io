@@ -1,4 +1,4 @@
-# Velvet Dusk — Personal Brand Design System
+# Purple Mint — Personal Brand Design System
 
 > **Theme:** Calm Tech / Purple Mint
 > **Core Feel:** Regal confidence, modern minimalism, refined engineering
