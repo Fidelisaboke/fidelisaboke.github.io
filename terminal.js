@@ -354,4 +354,33 @@
             }
         });
     });
+
+    // ── Konami Code Detection ─────────────────────────────────────
+
+    const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+    let konamiIndex = 0;
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === konamiCode[konamiIndex]) {
+            konamiIndex++;
+            if (konamiIndex === konamiCode.length) {
+                activateHackerMode();
+                konamiIndex = 0;
+            }
+        } else {
+            konamiIndex = 0;
+        }
+    });
+
+    function activateHackerMode() {
+        const terminal = document.querySelector('.terminal-container');
+        if (!terminal) return;
+
+        terminal.classList.toggle('konami-mode');
+        
+        if (terminal.classList.contains('konami-mode')) {
+            appendOutput('\n  [SYSTEM] Easter egg activated. Welcome to the Matrix.\n', 'terminal-welcome');
+            console.log('Matrix mode engaged.');
+        }
+    }
 })();

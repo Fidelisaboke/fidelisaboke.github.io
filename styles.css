@@ -1030,6 +1030,41 @@ footer p {
     overflow-x: auto;
 }
 
+/* ── Konami Mode ──────────────────────────── */
+
+.terminal-container.konami-mode {
+    border-color: #00ff41;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+    position: relative;
+}
+
+.terminal-container.konami-mode::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(18, 16, 16, 0) 50%,
+        rgba(0, 0, 0, 0.1) 50%
+    ), linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 0.03),
+        rgba(0, 255, 0, 0.01),
+        rgba(0, 0, 255, 0.03)
+    );
+    background-size: 100% 3px, 3px 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.konami-mode .terminal-prompt { color: #00ff41; }
+.konami-mode .terminal-line { color: #00ff41; text-shadow: 0 0 5px rgba(0, 255, 65, 0.5); }
+.konami-mode .ascii-art { color: #00ff41; }
+.konami-mode .terminal-line a { color: #00ff41; text-decoration: underline; }
+.konami-mode .terminal-input { color: #00ff41; caret-color: #00ff41; }
+
 /* RESPONSIVENESS */
 
 
