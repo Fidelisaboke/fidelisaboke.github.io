@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Projects by Fidel Isaboke — AI tools, web applications, and open-source contributions." />
+  <meta name="description"
+    content="Projects by Fidel Isaboke — AI tools, web applications, and open-source contributions." />
   <title>Projects — Fidel Isaboke</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="main.js"></script>
@@ -20,8 +21,22 @@
         <li><a href="contact.html">Contact</a></li>
         <li>
           <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
-            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
           </button>
         </li>
       </ul>
@@ -38,54 +53,84 @@
 
     <section class="projects-grid container stagger">
 
+      <!-- Slideia -->
       <div class="project-card glass glow-border">
-        <div class="project-card-accent"></div>
+        <img src="images/slideia.png" alt="Slideia Preview" class="project-preview-img">
         <div class="project-card-content">
           <h2>Slideia</h2>
-          <p>An AI-powered presentation tool that generates slide decks from text input. Features a chat interface, SSE streaming, and an MCP server.</p>
+          <p>AI-powered slides generator converting text to professional presentations. Features a chat interface, SSE
+            streaming, and an MCP server.</p>
           <div class="project-tags">
             <span class="skill-tag">React</span>
             <span class="skill-tag">FastAPI</span>
             <span class="skill-tag">LangGraph</span>
           </div>
-        </div>
-      </div>
-
-      <div class="project-card glass glow-border">
-        <div class="project-card-accent"></div>
-        <div class="project-card-content">
-          <h2>Budgetron</h2>
-          <p>A personal finance management tool focused on clean UX and data privacy. Built with React and Flask.</p>
-          <div class="project-tags">
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Flask</span>
-            <span class="skill-tag">PostgreSQL</span>
+          <div class="hero-actions" style="margin-top: 1.5rem; justify-content: flex-start; gap: 0.75rem;">
+            <a href="https://slideia.vercel.app" target="_blank" class="btn btn-primary"
+              style="padding: 10px 20px; font-size: 0.85rem;">Live Demo</a>
+            <a href="https://github.com/Fidelisaboke/slideia" target="_blank" class="btn btn-secondary"
+              style="padding: 10px 20px; font-size: 0.85rem;">GitHub</a>
           </div>
         </div>
       </div>
 
+      <!-- CreditExplain -->
       <div class="project-card glass glow-border">
-        <div class="project-card-accent"></div>
+        <img src="images/credit-explain-query.png" alt="CreditExplain Preview" class="project-preview-img">
         <div class="project-card-content">
-          <h2>YouTube Chatbot</h2>
-          <p>Interactive RAG chatbot that answers questions about YouTube videos using transcript retrieval and LLM reasoning.</p>
+          <h2>CreditExplain</h2>
+          <p>Advanced RAG system for financial compliance in Kenya and Nigeria. Placed 2nd/15 at NSK.AI RAG hackathon.
+            Uses Self-RAG architecture for improved retrieval accuracy.</p>
+          <div class="project-tags">
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">React 18</span>
+            <span class="skill-tag">Self-RAG</span>
+          </div>
+          <div class="hero-actions" style="margin-top: 1.5rem; justify-content: flex-start;">
+            <a href="https://github.com/Fidelisaboke/CreditExplain" target="_blank" class="btn btn-secondary"
+              style="padding: 10px 20px; font-size: 0.85rem;">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Robust NIDS -->
+      <div class="project-card glass glow-border">
+        <img src="images/robust-nids-landing.png" alt="Robust NIDS Preview" class="project-preview-img">
+        <div class="project-card-content">
+          <h2>Robust NIDS</h2>
+          <p>Final year project: Network Intrusion Detection vs Evasion Attacks. Applied Adversarial ML to enhance
+            resilience by 15%. Includes a full-stack monitoring dashboard.</p>
+          <div class="project-tags">
+            <span class="skill-tag">Adversarial ML</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Scikit-Learn</span>
+            <span class="skill-tag">Next.js</span>
+          </div>
+          <div class="hero-actions" style="margin-top: 1.5rem; justify-content: flex-start;">
+            <a href="https://github.com/Fidelisaboke/robust-nids" target="_blank" class="btn btn-secondary"
+              style="padding: 10px 20px; font-size: 0.85rem;">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Zerra Code Reviewer -->
+      <div class="project-card glass glow-border">
+        <div class="project-card-content">
+          <img src="images/zerra-full-logo-white.png" alt="Zerra Logo" class="themed-logo themed-logo-dark">
+          <img src="images/zerra-full-logo-black.png" alt="Zerra Logo" class="themed-logo themed-logo-light">
+          <h2>AI Code Reviewer</h2>
+          <p>An AI-powered Socratic code reviewer for the Zerra EdTech platform. It automatically reviews pull requests
+            by asking guiding questions rather than giving direct answers, helping learners discover their mistakes
+            through thinking.</p>
           <div class="project-tags">
             <span class="skill-tag">Python</span>
             <span class="skill-tag">LangChain</span>
-            <span class="skill-tag">Streamlit</span>
+            <span class="skill-tag">GitHub API</span>
           </div>
-        </div>
-      </div>
-
-      <div class="project-card glass glow-border">
-        <div class="project-card-accent"></div>
-        <div class="project-card-content">
-          <h2>Modern Portfolio</h2>
-          <p>This site — built with vanilla HTML, CSS, and JS to demonstrate design system principles, accessibility, and performance.</p>
-          <div class="project-tags">
-            <span class="skill-tag">HTML5</span>
-            <span class="skill-tag">CSS3</span>
-            <span class="skill-tag">Vanilla JS</span>
+          <div class="hero-actions" style="margin-top: 1.5rem; justify-content: flex-start;">
+            <a href="https://github.com/apps/zerra-edtech-ai-code-reviewer" target="_blank" class="btn btn-primary"
+              style="padding: 10px 20px; font-size: 0.85rem;">GitHub App</a>
           </div>
         </div>
       </div>
@@ -94,13 +139,34 @@
   </main>
 
   <footer>
-    <div class="container">
-      <div class="social-links">
-        <a href="https://github.com/Fidelisaboke" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/fidel-isaboke-57aba3263/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+    <div class="container footer-content">
+      <div class="footer-actions">
+        <div class="social-links">
+          <a href="https://github.com/Fidelisaboke" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/fidel-isaboke-57aba3263/" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+        </div>
+        <a href="docs/fidel-isaboke-cv.pdf" class="cv-link" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Resume
         </a>
       </div>
       <p>&copy; 2026 Fidel Isaboke. All rights reserved.</p>

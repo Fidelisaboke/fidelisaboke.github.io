@@ -668,7 +668,6 @@ footer p {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin-bottom: 1rem;
 }
 
 .social-links a {
@@ -688,6 +687,175 @@ footer p {
     border-color: var(--primary);
     background: rgba(167, 139, 250, 0.08);
     transform: translateY(-2px);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.cv-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 8px 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+    transition: var(--transition);
+}
+
+.cv-link:hover {
+    background: rgba(167, 139, 250, 0.08);
+    transform: translateY(-2px);
+}
+
+/* ──────────────────────────────────────────────
+   TIMELINE & CERTIFICATIONS
+   ────────────────────────────────────────────── */
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 40px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--primary);
+    border: 4px solid var(--bg-main);
+    z-index: 1;
+}
+
+.timeline-date {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.timeline-content h3 {
+    margin-bottom: 0.25rem;
+    font-size: 1.25rem;
+}
+
+.timeline-content .company {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.timeline-content ul {
+    list-style: none;
+}
+
+.timeline-content li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.92rem;
+}
+
+.timeline-content li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+}
+
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.cert-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cert-card h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cert-issuer {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.25rem;
+    display: block;
+}
+
+.credly-embed-container {
+    background: #fff;
+    padding: 10px;
+    border-radius: var(--radius-sm);
+    display: inline-block;
+    margin-top: auto;
+}
+
+[data-theme="dark"] .cert-card img.themed-logo-light,
+[data-theme="light"] .cert-card img.themed-logo-dark {
+    display: none;
+}
+
+.project-preview-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--border);
+}
+
+.project-card .themed-logo {
+    height: 40px;
+    width: auto;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+
+[data-theme="dark"] .project-card .themed-logo-light,
+[data-theme="light"] .project-card .themed-logo-dark {
+    display: none;
 }
 
 /* RESPONSIVENESS */
