@@ -11,11 +11,9 @@
     const PROMPT = 'fidel@portfolio:~$ ';
 
     const ASCII_BANNER = `
-  _____ _     _      _   ___           _           _
- |  ___(_) __| | ___| | |_ _|___  __ _| |__   ___ | | _____
- | |_  | |/ _\` |/ _ \\ |  | |/ __|/ _\` | '_ \\ / _ \\| |/ / _ \\
- |  _| | | (_| |  __/ |  | |\\__ \\ (_| | |_) | (_) |   <  __/
- |_|   |_|\\__,_|\\___|_| |___|___/\\__,_|_.__/ \\___/|_|\\_\\___|
+  -----------------------------------------------
+  FIDEL ISABOKE | Full Stack Developer & AI Engineer
+  -----------------------------------------------
 `;
 
     const WELCOME_MSG = "\nWelcome to my interactive terminal. Type 'help' to get started.\n";
