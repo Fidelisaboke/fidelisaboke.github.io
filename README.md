@@ -54,4 +54,4 @@ open index.html
 - **GitHub:** [Fidelisaboke](https://github.com/Fidelisaboke)
 - **LinkedIn:** [Fidel Isaboke](https://www.linkedin.com/in/fidel-isaboke-57aba3263/)
 
-&copy; 2026 Fidel Isaboke. All rights reserved.
+&copy; 2026 Fidel Isaboke. MIT Licensed.
