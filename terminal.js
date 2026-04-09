@@ -332,6 +332,22 @@
                 scrollToBottom();
             }
 
+            // Tab auto-completion
+            if (e.key === 'Tab') {
+                e.preventDefault();
+                const val = input.value.trim().toLowerCase();
+                if (!val) return;
+
+                const matches = Object.keys(commands).filter(c => c.startsWith(val));
+                if (matches.length === 1) {
+                    input.value = matches[0];
+                } else if (matches.length > 1) {
+                    // Show hints if multiple matches
+                    appendPromptLine(val);
+                    appendOutput('  ' + matches.join('  '), 'terminal-result');
+                }
+            }
+
             // Arrow up: previous command
             if (e.key === 'ArrowUp') {
                 e.preventDefault();

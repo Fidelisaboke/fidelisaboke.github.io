@@ -22,6 +22,7 @@
   <!-- Browser Polish -->
   <meta name="theme-color" content="#0D0B14" />
   <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://fidelisaboke.github.io/portfolio/contact.html" />
   
   <title>Contact | Fidel Isaboke</title>
   <link rel="icon" type="image/png" href="images/favicon.png" />
@@ -94,26 +95,6 @@
       <p>&copy; 2026 Fidel Isaboke. All rights reserved.</p>
     </div>
   </footer>
-
-  <!-- EmailJS SDK -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script>
-    (function() {
-      emailjs.init('knjG5w1LOJAZ5Nf2D');
-    })();
-
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      emailjs.sendForm('service_ejoijxc', 'template_3621udf', this)
-        .then(function() {
-          alert('Message sent successfully!');
-          document.getElementById('contact-form').reset();
-        }, function(error) {
-          alert('Failed to send message. Please try again later.');
-        });
-    });
-  </script>
 </body>
 
 </html>
