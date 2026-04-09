@@ -128,6 +128,9 @@
         },
 
         cv: () => {
+            if (window.trackEvent) {
+                window.trackEvent('Download CV', { location: 'terminal' });
+            }
             window.open('docs/fidel-isaboke-cv.pdf', '_blank');
             return '\n  Opening resume in a new tab...\n';
         },
@@ -213,6 +216,9 @@
         const args = parts.slice(1);
 
         if (commands[cmd]) {
+            if (window.trackEvent) {
+                window.trackEvent('Terminal Command', { command: cmd, args: args.join(' ') });
+            }
             return commands[cmd](args);
         }
 
