@@ -18,7 +18,7 @@
 
     const WELCOME_MSG = "\nWelcome to my interactive terminal. Type 'help' to get started.\n";
 
-    // ── Command Registry ──────────────────────────────────────────
+    // Command Registry
 
     const commands = {
 
@@ -191,7 +191,7 @@
         },
     };
 
-    // ── Terminal Engine ───────────────────────────────────────────
+    // Terminal Engine
 
     let commandHistory = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
     let historyIndex = -1;
@@ -225,7 +225,7 @@
         return `\n  Command not found: ${cmd}. Type 'help' for available commands.\n`;
     }
 
-    // ── Typewriter Effect ─────────────────────────────────────────
+    // Typewriter Effect
 
     function typeWriter(element, text, speed) {
         return new Promise((resolve) => {
@@ -249,7 +249,7 @@
         if (output) output.scrollTop = output.scrollHeight;
     }
 
-    // ── Output Rendering ──────────────────────────────────────────
+    // Output Rendering
 
     function appendOutput(html, className) {
         const output = document.getElementById('terminal-output');
@@ -274,7 +274,7 @@
         return div.innerHTML;
     }
 
-    // ── Initialisation ────────────────────────────────────────────
+    // Initialisation
 
     document.addEventListener('DOMContentLoaded', async function () {
         const output = document.getElementById('terminal-output');
