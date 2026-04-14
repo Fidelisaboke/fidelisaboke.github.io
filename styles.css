@@ -905,9 +905,7 @@ footer p {
     transform: translateY(-2px);
 }
 
-/* ──────────────────────────────────────────────
-   TIMELINE & CERTIFICATIONS
-   ────────────────────────────────────────────── */
+/* Timeline & Certifications */
 
 .timeline {
     position: relative;
@@ -1079,7 +1077,7 @@ footer p {
     display: none;
 }
 
-/* ── Interactive Terminal ──────────────────────────────── */
+/* Interactive Terminal */
 
 .terminal-page {
     display: flex;
@@ -1224,7 +1222,7 @@ footer p {
     overflow-x: auto;
 }
 
-/* ── Konami Mode ──────────────────────────── */
+/* Konami Mode */
 
 .terminal-container.konami-mode {
     border-color: #00ff41;
