@@ -42,10 +42,10 @@ No build tools or installers are required.
 
 ```bash
 # Clone the repository
-git clone https://github.com/Fidelisaboke/portfolio.git
+git clone https://github.com/Fidelisaboke/fidelisaboke.github.io.git
 
 # Open the project
-cd portfolio
+cd fidelisaboke.github.io
 open index.html
 ```
 
