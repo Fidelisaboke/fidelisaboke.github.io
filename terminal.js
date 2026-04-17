@@ -67,7 +67,7 @@
             return [
                 '',
                 '  ┌─ Languages ──────────────────────────────────┐',
-                '  │  Python · JavaScript · TypeScript · Java      │',
+                '  │  Python · JavaScript · TypeScript             │',
                 '  └──────────────────────────────────────────────┘',
                 '  ┌─ Frameworks ─────────────────────────────────┐',
                 '  │  React · Next.js · FastAPI · Django · Flask   │',
@@ -76,7 +76,7 @@
                 '  │  LangChain · LangGraph · Scikit-Learn         │',
                 '  └──────────────────────────────────────────────┘',
                 '  ┌─ Tools ──────────────────────────────────────┐',
-                '  │  Git · Docker · PostgreSQL · MongoDB          │',
+                '  │  Git · Docker · PostgreSQL · MongoDB · Redis  │',
                 '  └──────────────────────────────────────────────┘',
                 '',
             ].join('\n');
@@ -91,6 +91,8 @@
                 '  Zerra Code Rev.  Socratic AI code reviewer     <a href="https://github.com/apps/zerra-edtech-ai-code-reviewer" target="_blank">↗ App</a>',
                 '  CreditExplain    Self-RAG for compliance       <a href="https://github.com/Fidelisaboke/CreditExplain" target="_blank">↗ GitHub</a>',
                 '  Robust NIDS      Adversarial ML defence        <a href="https://github.com/Fidelisaboke/robust-nids" target="_blank">↗ GitHub</a>',
+                '  StrathPort       School transport system       <a href="https://strathport.onrender.com" target="_blank">↗ Demo</a>  <a href="https://github.com/Fidelisaboke/StrathPort" target="_blank">↗ GitHub</a>',
+                '  Cannon Frenzy    2D Artillery game             <a href="https://github.com/Fidelisaboke/cannon-frenzy-relaunched" target="_blank">↗ GitHub</a>',
                 '',
                 '  → <a href="projects.html">View all projects</a>',
                 '',
